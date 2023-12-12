@@ -18,16 +18,16 @@ export default function Calculator() {
   
   const calculateAge = () => {
     const now = new Date();
-    const datebirthday = new Date(year, month - 1, day);
+    const bday = new Date(year, month - 1, day);
     
-    if (datebirthday > now) {
+    if (bday > now) {
       console.error('A data de nascimento não pode estar no futuro');
       return;
     }
     
-    let yearCalculated = now.getFullYear() - datebirthday.getFullYear();
-    let monthDiff = now.getMonth() - datebirthday.getMonth();
-    let days = now.getDate() - datebirthday.getDate();
+    let yearCalculated = now.getFullYear() - bday.getFullYear();
+    let monthDiff = now.getMonth() - bday.getMonth();
+    let days = now.getDate() - bday.getDate();
     
     if (monthDiff < 0 || (monthDiff === 0 && days < 0)) {
       yearCalculated -= 1;
@@ -80,7 +80,7 @@ export default function Calculator() {
   
   return (
     <section className={style.container}>
-    <form className={style.form}>
+      <form className={style.form}>
     <div>
     <p className={style.title}>Day</p>
     <input className={style.input} type="number" placeholder='DD' min="1" max="31" required value={day} onChange={(e) => setDay(e.target.value)}/>
@@ -96,9 +96,9 @@ export default function Calculator() {
     <input className={style.input} type="number" placeholder='YYYY'required value={year} onChange={(e) => setYear(e.target.value)}/>
     {yearError && <p className={style.alert}>This field is required</p>}
     </div>
-    </form>
-    <Button onClick={handleConfirm} />
-    <article className={style.information}>
+      </form>
+      <Button onClick={handleConfirm} />
+      <article className={style.information}>
     <h2 className={style.informationAll}> 
     <span className={style.year}>
     <Counter value={(resultYear) || "--"} />
@@ -117,7 +117,7 @@ export default function Calculator() {
     </span>
     days
     </h2>
-    </article>
+      </article>
     </section>
     )
   }
