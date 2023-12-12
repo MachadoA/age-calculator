@@ -1,0 +1,46 @@
+.btn{
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: hsl(259, 100%, 65%);
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.img{
+    height: 27px;
+}
+
+.linea{
+    color: hsl(0, 0%, 86%);
+    border: 1px solid hsl(0, 0%, 86%);
+    margin: 50px auto;
+    width: 95%;
+    position: relative;
+}
+
+@media (min-width:900px){
+    .linea{
+        margin: 38px auto;
+        width: 88%;
+    }
+    .btn{
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: 100%;
+        transform: translateX(-90%);
+        z-index: 10;
+    }
+    .img{
+        height: 44px;
+    }
+}

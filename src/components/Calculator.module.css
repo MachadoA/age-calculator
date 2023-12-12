@@ -1,0 +1,108 @@
+.container{
+    margin:5em auto;
+    padding-top: 2.8em;
+    background-color: #fff;
+    border-radius: 18px;
+    max-width: 350px;
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    padding-bottom: 2em;
+}
+
+.form{
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+    padding-bottom: 8px;
+}
+
+.input{
+    max-width: 100px;
+    width: 100%;
+    height: 55px;
+    border-radius: 18px;
+    border-color: hsl(0, 1%, 44%);
+    outline: none;
+    text-indent: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.input::placeholder{
+    text-indent: 10px;
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+}
+
+.information{
+    text-align: center;
+    padding-right: 15px;
+}
+
+.alert{
+    color: hsl(0, 100%, 67%);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+.informationAll{
+    display: flex;
+    align-items: center;
+}
+
+.year{
+    animation: countUp 0.5s linear;
+}
+
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+@media(min-width: 900px){
+    .container{
+        max-width: 900px;
+        width: 100%;
+        min-height: 600px;
+        padding-top: 3.3em;
+        padding-bottom: 4.5em;
+        border-bottom-right-radius: 250px;
+    }
+    .form{
+        width: 100%;
+        padding-left: 4em;
+        gap: 35px;
+    }
+    .title{
+        padding-bottom: 10px;
+    }
+    .input{
+        max-width: 165px;
+        width: 165px;
+        height: 67px;
+        text-indent: 30px;
+    }
+    .input::placeholder{
+        text-indent: 30px;
+    }
+    .information{
+        text-align: left;
+        padding-left: 4em;
+    }
+}

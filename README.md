@@ -14,8 +14,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -35,12 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/ecra.png)
+![](/public/ecra.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/MachadoA/age-calculator](https://github.com/MachadoA/age-calculator)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
