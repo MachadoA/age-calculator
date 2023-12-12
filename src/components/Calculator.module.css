@@ -13,7 +13,6 @@
 .form{
     padding: 1.5em;
     display: flex;
-    flex-wrap: wrap;
     gap: 6px;
 }
 
@@ -45,7 +44,7 @@ span{
 
 .information{
     text-align: center;
-    padding-right: 15px;
+    padding-left: 26px;
 }
 
 .alert{

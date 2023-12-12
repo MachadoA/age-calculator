@@ -52,6 +52,8 @@ h2{
     font-family: 'Poppins-ExtraBold';
     font-size: 60px;
 }
+.attribution { font-size: 11px; text-align: center; font-family: 'Poppins-Italic'; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @media(min-width:900px){
     p{
